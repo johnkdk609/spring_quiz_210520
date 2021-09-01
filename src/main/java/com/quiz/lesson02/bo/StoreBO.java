@@ -14,7 +14,7 @@ public class StoreBO {
 	@Autowired
 	private StoreDAO storeDAO;	// 의존성 주입
 	
-	public List<Store> getStoreList() {
+	public List<Store> selectStoreList() {
 		return storeDAO.selectStoreList();
 	}
 }
