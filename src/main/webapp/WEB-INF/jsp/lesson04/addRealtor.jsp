@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>seller 추가</title>
+<title>Realtor 추가</title>
 <!-- bootstrap CDN link -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	
@@ -14,19 +14,22 @@
 </head>
 <body>
 	<div class="container">
-		<h1>판매자 추가</h1>
+		<h1>공인중개사 추가</h1>
 		
-		<form method="post" action="/lesson04/quiz01/add_seller">
-			<span>닉네임</span>
-			<input type="text" class="form-control col-3" name="nickname" placeholder="닉네임을 입력하세요.">
+		<form method="post" action="/lesson04/quiz02/add_realtor">
+			<div>상호명</div>
+			<input type="text" class="form-control" name="office">
 			
-			<span>프로필 사진 url</span>
-			<input type="text" class="form-control" name="profileImage" placeholder="프로필 사진 파일을 추가하세요.">
+			<div>전화번호</div>
+			<input type="text" class="form-control" name="phoneNumber">
 			
-			<span>온도</span>
-			<input type="text" class="form-control col-3" name="temperature" placeholder="온도를 입력하세요.">
+			<div>주소</div>
+			<input type="text" class="form-control" name="address">
 			
-			<button type="submit" class="btn btn-primary">추가</button>
+			<div>등급</div>
+			<input type="text" class="form-control" name="grade">
+			
+			<button type="submit" class="btn btn-primary mt-3">추가</button>
 		</form>
 	</div>
 </body>
